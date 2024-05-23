@@ -10,7 +10,8 @@ app.post('/onEvent', (req, res, next) => {
         const ncco = [{
             action: 'talk',
             text: 'Hello, how are you doing Julien ? Im calling you to tell you that your script is working',
-            language: "en-GB"
+            language: "en-GB",
+            loop: 5
         }];
         console.log(req.body);
         res.json(ncco);
