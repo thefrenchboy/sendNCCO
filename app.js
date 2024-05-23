@@ -10,8 +10,10 @@ app.post('/onEvent', (req, res, next) => {
         console.log("- - onEvent - -")
         console.log("BEEP STARTED... SEND NCCO !!!")
         const ncco = [{
-            action: 'stream',
-            streamUrl: 'https://mychezmoi.retool.com/api/file/1026504d-bac9-4787-b81a-85d8c989481d',
+            action: 'talk',
+            text: 'Hello this is a voice message dropped on your voicemail ! have a good day !',
+            language: "en-GB",
+            loop: 2
         }];
         console.log(req.body);
         res.json(ncco);
