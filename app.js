@@ -7,6 +7,7 @@ app.use(express.json());
 app.post('/onEvent', (req, res, next) => {
     if (req.body.status == 'machine' && req.body.sub_state == 'beep_start') {
         console.log("---------------------")
+        console.log("- - onEvent - -")
         console.log("BEEP STARTED... SEND NCCO !!!")
         const ncco = [{
             action: 'stream',
@@ -16,6 +17,7 @@ app.post('/onEvent', (req, res, next) => {
         res.json(ncco);
     } else {
         console.log("---------------------")
+        console.log("- - onEvent - -")
         console.log(req.body);
         res.sendStatus(204);
     }
@@ -28,6 +30,8 @@ app.post('/onAnswer', (req, res, next) => {
         language: "en-GB",
         loop: 0
     }];
+    console.log("---------------------")
+    console.log("- - onAnswer - -")
     console.log(req.body);
     res.json(ncco);
 })
