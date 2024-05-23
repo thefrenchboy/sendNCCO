@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@vonage/server-sdk": "^3.14.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "name": "nccoserver",
+  "version": "1.0.0",
+  "description": "send ncco to voicemail when needed",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "sendNCCO"
+  },
+  "author": "Julien Roche",
+  "license": "ISC"
+}
