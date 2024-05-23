@@ -30,7 +30,7 @@ app.post('/onAnswer', (req, res, next) => {
         action: 'talk',
         text: 'Hello, how are you doing Julien ? Im calling you to tell you that your script is working',
         language: "en-GB",
-        loop: 0
+        loop: 1
     }];
     console.log("---------------------")
     console.log("- - onAnswer - -")
