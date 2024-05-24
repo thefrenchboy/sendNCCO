@@ -39,4 +39,17 @@ app.post('/onAnswer', (req, res, next) => {
     res.json(ncco);
 })
 
+app.post('/firefliesTranscripts', (req, res, next) => {
+    const ncco = [{
+        action: 'talk',
+        text: 'Hello, how are you doing Julien ? Im calling you to tell you that your script is working',
+        language: "en-GB",
+        loop: 1
+    }];
+    console.log("---------------------")
+    console.log("- - onAnswer - -")
+    console.log(req.body);
+    res.json(ncco);
+})
+
 app.listen(process.env.SERVER_PORT || 3000)
