@@ -11,7 +11,7 @@ app.post('/onEvent', (req, res, next) => {
         console.log("BEEP STARTED... SEND NCCO !!!")
         const ncco = [{
             "action": "stream",
-            "streamUrl": ["https://mychezmoi.retool.com/api/file/1026504d-bac9-4787-b81a-85d8c989481d"],
+            "streamUrl": ["https://storage.googleapis.com/mailing-vox-storage/Vic-nouvel-enregistrement.mp3"],
             "bargeIn": "false",
             "loop": 1
         }];
