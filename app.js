@@ -13,7 +13,8 @@ app.post('/onEvent', (req, res, next) => {
             "action": "stream",
             "streamUrl": ["https://storage.googleapis.com/mailing-vox-storage/Vic-nouvel-enregistrement.mp3"],
             "bargeIn": "false",
-            "loop": 1
+            "loop": 1,
+            "level": 1
         }];
         console.log(req.body);
         res.json(ncco);
