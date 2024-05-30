@@ -29,8 +29,8 @@ app.post('/onEvent', (req, res, next) => {
 app.post('/onAnswer', (req, res, next) => {
     const ncco = [{
         action: 'talk',
-        text: 'Hello, how are you doing Julien ? Im calling you to tell you that your script is working',
-        language: "en-GB",
+        text: 'Bonjour!',
+        language: "fr-FR",
         loop: 1
     }];
     console.log("---------------------")
